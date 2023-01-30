@@ -83,8 +83,8 @@ console.log(getLast(list))
 let food = ['Burger', 'Fries', 'Soda'];
 
 function find( value, array ){
-  for (let i=0; i < food.length; i++) {
-    if (food[i] === 'Burger' ) {
+  for (let i=0; i < array.length; i++) {
+    if (food[i] === value ) {
       return true; 
     }
     else {
@@ -93,7 +93,7 @@ function find( value, array ){
   }
 }
 
-console.log(find());
+console.log(find('Burger', food));
 
 // ----------------------
 // Stretch Goals
